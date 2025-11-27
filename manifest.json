@@ -5,11 +5,7 @@
   "manifest_version": 3,
 
   "permissions": [
-    "declarativeNetRequest",
-    "declarativeNetRequestWithHostAccess",
-    "storage",
-    "activeTab",
-    "scripting"
+    "declarativeNetRequest"
   ],
   "host_permissions": ["https://*.hotstar.com/*"],
 
