@@ -1,0 +1,17 @@
+[
+  {
+  "id": 1,
+  "priority": 1,
+  "action": { "type": "block" },
+  "condition": {
+    "urlFilter": "||hesads.akamaized.net/ns/",
+    "initiatorDomains": ["www.hotstar.com"],
+    "resourceTypes": ["xmlhttprequest", "media"]
+  }
+}
+
+]
+
+
+
+

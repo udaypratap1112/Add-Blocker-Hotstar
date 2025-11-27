@@ -1,0 +1,33 @@
+{
+  "name": "Hotstar Add Blocker",
+  "description": "Blocks specific URLs and requests (like ads, trackers).",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": ["https://*.hotstar.com/*"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+
+  "action": {
+    "default_title": "URL Blocker Active"
+  }
+}
